@@ -3,6 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<script>
+const load = (a) => {
+    var log = a.concat("load event detected!");
+    console.log(log);
+}
+window.onload = load('a ');
+</script>
 <title>Junhee Park</title>
 </head>
 <body>
