@@ -2,6 +2,6 @@
 sass sass/main.sass css/main.css
 git add sass css
 # now=$(date +"%s")
-git commit -m "updated styles at $date"
+git commit -m "updated styles at $(date)"
 git push -u origin master
 
