@@ -1,4 +1,5 @@
 #!/bin/bash
 sass sass/main.sass css/main.css
+git add sass css
 git push -u origin master
 
