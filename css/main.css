@@ -1,5 +1,9 @@
 body {
   font: 100% Helvetica, sans-serif;
-  color: #555; }
+  color: #404040; }
+
+header h1 a {
+  text-decoration: none;
+  color: #404040; }
 
 /*# sourceMappingURL=main.css.map */
