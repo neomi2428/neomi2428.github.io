@@ -4,7 +4,7 @@
 
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" href="../css/main.css">
-<link rel="main" href="../template/main.html">
+<link rel="import" href="../template/main.html">
 <title>Enabler, Equalizer</title>
 
 </head>
@@ -13,20 +13,7 @@
 <!-- main.html -->
 About
 
-<script>
-const load = (a) => {
-  var log = a.concat("load event detected!");
-  console.log(log);
-
-  var mainHtml = document.querySelector('link[rel="main"]');
-  var content = mainHtml.import;
-
-  var header = content.querySelector('header');
-  var nav = content.querySelector('nav');
-  document.body.insertAdjacentElement('afterbegin', nav.cloneNode(true));
-  document.body.insertAdjacentElement('afterbegin', header.cloneNode(true));
-}
-window.onload = load('a ');
+<script type="text/javascript" src="../js/main.js">
 </script>
 
 </body>

@@ -13,20 +13,7 @@
 <!-- main.html -->
 Hello World!
 
-<script>
-const load = (a) => {
-  var log = a.concat("load event detected!");
-  console.log(log);
-
-  var mainHtml = document.querySelector('link[rel="import"]');
-  var content = mainHtml.import;
-
-  var header = content.querySelector('header');
-  var nav = content.querySelector('nav');
-  document.body.insertAdjacentElement('afterbegin', nav.cloneNode(true));
-  document.body.insertAdjacentElement('afterbegin', header.cloneNode(true));
-}
-window.onload = load('a ');
+<script type="text/javascript" src="js/main.js">
 </script>
 
 </body>
