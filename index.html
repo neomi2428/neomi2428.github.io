@@ -29,8 +29,8 @@ const load = (a) => {
 
   console.log(document.body);
 
-  document.body.appendChild(header.cloneNode(true));
-  document.body.appendChild(nav.cloneNode(true));
+  document.body.insertAdjacentElement('afterbegin', nav.cloneNode(true));
+  document.body.insertAdjacentElement('afterbegin', header.cloneNode(true));
 }
 window.onload = load('a ');
 </script>
