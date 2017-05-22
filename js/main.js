@@ -13,4 +13,14 @@ const loadTemplates = (a) => {
     document.body.insertAdjacentElement('afterbegin', header.cloneNode(true));
 };
 
-window.onload = loadTemplates('a ');
+const loadFont = () => {
+    console.log(document);
+    console.log(document.head);
+};
+
+const initialize = () => {
+    loadTemplates('a ');
+    loadFont();
+};
+
+window.onload = initialize();
