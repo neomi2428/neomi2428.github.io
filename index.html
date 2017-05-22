@@ -5,10 +5,22 @@
 <meta charset="UTF-8">
 <title>Enabler, Equalizer</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="import" href="html/main.html">
 <script>
 const load = (a) => {
   var log = a.concat("load event detected!");
   console.log(log);
+
+  var mainHtml = document.querySelector('link[rel="import"]');
+  var content = mainHtml.import;
+
+  var header = content.querySelector('header');
+  console.log(header);
+  var nav = content.querySelector('nav');
+  console.log(nav);
+
+  document.body.appendChile(header.cloneNode(true));
+  document.body.appendChile(nav.cloneNode(true));
 }
 window.onload = load('a ');
 </script>
@@ -17,17 +29,8 @@ window.onload = load('a ');
 </head>
 <body>
 
-<header>
-  <h1>
-    <a href="https://neomi2428.github.io">Enabler, Equalizer</a>
-  </h1>
-</header>
-<nav>
-  <ul>
-    <li><a href="">Home</a></li>
-    <li><a href="">About</a></li>
-  </ul>
-</nav>
+<!-- main.html -->
+
 Hello World!
 
 </body>
