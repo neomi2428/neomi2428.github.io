@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <title>Enabler, Equalizer</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<link rel="main" href="template/main.html">
+<link rel="import" href="template/main.html">
 
 </head>
 <body>
@@ -18,8 +18,7 @@ const load = (a) => {
   var log = a.concat("load event detected!");
   console.log(log);
 
-  var mainHtml = document.querySelector('link[rel="main"]');
-  console.log(mainHtml);
+  var mainHtml = document.querySelector('link[rel="import"]');
   var content = mainHtml.import;
 
   var header = content.querySelector('header');
