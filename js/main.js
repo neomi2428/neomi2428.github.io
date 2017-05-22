@@ -1,7 +1,7 @@
 /*jslint browser:true*/
 /*global window*/
 const loadTemplates = (a) => {
-    var load = a.concat("load event detected!");
+    var load = a.concat('load event detected!');
     console.log(load);
 
     var mainHtml = document.querySelector('link[rel="import"]');
@@ -14,8 +14,10 @@ const loadTemplates = (a) => {
 };
 
 const loadFont = () => {
-    console.log(document);
-    console.log(document.head);
+    var link = document.createElement('link');
+    link.href = 'https://fonts.googleapis.com/css?family=Open+Sans';
+    link.rel = 'stylesheet';
+    document.head.insertAdjacentElement('afterbegin', link);
 };
 
 const initialize = () => {
