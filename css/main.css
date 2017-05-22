@@ -10,6 +10,9 @@ header h1 a {
 nav ul {
   list-style-type: none; }
   nav ul li {
-    float: left; }
+    float: left;
+    padding: 10px; }
+    nav ul li:last-child {
+      clear: both; }
 
 /*# sourceMappingURL=main.css.map */
