@@ -8,11 +8,10 @@ header h1 a {
   color: #404040; }
 
 nav ul {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 0; }
   nav ul li {
-    float: left;
+    display: inline;
     padding: 10px; }
-    nav ul li:last-child {
-      clear: both; }
 
 /*# sourceMappingURL=main.css.map */
