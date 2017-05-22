@@ -20,5 +20,7 @@ nav ul {
         box-shadow: 0 2px 0 0 currentColor; }
       nav ul li a:visited {
         color: #404040; }
+      nav ul li a.current-menu {
+        box-shadow: 0 2px 0 0 currentColor; }
 
 /*# sourceMappingURL=main.css.map */
