@@ -5,8 +5,15 @@
 </header>
 <nav>
   <ul>
-    <li><a id="home-menu" href="/">Home</a></li>
+    <li><a id="home-menu" href="/" onmouseover="showTooltip(this);">Home</a></li>
     <li><a href="https://junheepark.wordpress.com" target="_blank">Blog</a></li>
     <li><a id="about-menu" href="/about">About</a></li>
   </ul>
 </nav>
+<script type="text/javascript">
+function showTooltip(target) {
+    console.log(this);
+    console.log(target);
+    console.log(target.innerHTML);
+}
+</script>
