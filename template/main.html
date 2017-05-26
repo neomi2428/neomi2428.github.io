@@ -13,15 +13,21 @@
         <a href="https://junheepark.wordpress.com" target="_blank">Blog</a>
         <span class="tooltiptext">My WordPress blog</span>
     </li>
-    <li>
+    <li class="tooltip">
         <a id="about-menu" href="/about">About</a>
         <span class="tooltiptext">About</span>
     </li>
   </ul>
 </nav>
 <style type="text/css">
+.tooltip {
+    position: relative;
+}
 .tooltip .tooltiptext {
     visibility: hidden;
+    position: absolute;
+    left: 20px;
+    top: 20px;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
