@@ -5,15 +5,17 @@
 </header>
 <nav>
   <ul>
-    <li><a id="home-menu" href="/" onmouseover="showTooltip(this);">Home</a></li>
-    <li><a href="https://junheepark.wordpress.com" target="_blank">Blog</a></li>
-    <li><a id="about-menu" href="/about">About</a></li>
+    <li class="tooltip">
+        <a id="home-menu" href="/">Home</a>
+        <span class="tooltiptext">Home</span>
+    </li>
+    <li class="tooltip">
+        <a href="https://junheepark.wordpress.com" target="_blank">Blog</a>
+        <span class="tooltiptext">My WordPress blog</span>
+    </li>
+    <li>
+        <a id="about-menu" href="/about">About</a>
+        <span class="tooltiptext">About</span>
+    </li>
   </ul>
 </nav>
-<script type="text/javascript">
-function showTooltip(target) {
-    console.log(this);
-    console.log(target);
-    console.log(target.innerHTML);
-}
-</script>
