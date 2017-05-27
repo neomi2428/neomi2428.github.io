@@ -60,10 +60,6 @@ class MenuHandler {
     }
 }
 
-const setContent = (content) => {
-    ;
-};
-
 const initialize = () => {
     loadFont();
     menuHandler.initialize();
