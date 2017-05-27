@@ -23,4 +23,20 @@ nav ul {
       nav ul li a.current-menu {
         box-shadow: 0 2px 0 0 currentColor; }
 
+.tooltip {
+  position: relative; }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    position: absolute;
+    top: 2.5rem;
+    left: 1rem;
+    z-index: 1;
+    font-size: 0.75rem;
+    background-color: #404040;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 6px; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible; }
+
 /*# sourceMappingURL=main.css.map */
