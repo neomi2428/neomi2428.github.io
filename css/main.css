@@ -16,11 +16,11 @@ nav ul {
     nav ul li a {
       color: #404040;
       text-decoration: none; }
-      nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+      nav ul li a:hover, nav ul li a:active {
         box-shadow: 0 2px 0 0 currentColor; }
       nav ul li a:visited {
         color: #404040; }
-      nav ul li a.current-menu {
+      nav ul li a.router-link-exact-active {
         box-shadow: 0 2px 0 0 currentColor; }
 
 .tooltip {

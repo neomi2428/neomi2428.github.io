@@ -5,12 +5,12 @@
 <meta charset="UTF-8">
 <title>Enabler, Equalizer</title>
 <link rel="stylesheet" type="text/css" href="css/main.css">
-<!--
-<link rel="import" href="template/main.html">
--->
+<script type="text/javascript" src="lib/vue.js"></script>
+<script type="text/javascript" src="lib/vue-router.js"></script>
 
 </head>
 <body>
+<div id="app">
 
 <header>
   <h1>
@@ -20,7 +20,7 @@
 <nav>
   <ul>
     <li class="tooltip">
-        <a id="home-menu">Home</a>
+        <router-link to="/">Home</router-link>
         <span class="tooltiptext">Home</span>
     </li>
     <li class="tooltip">
@@ -28,18 +28,17 @@
         <span class="tooltiptext">My WordPress blog</span>
     </li>
     <li class="tooltip">
-        <a id="about-menu">About</a>
+        <router-link to="/about">About</router-link>
         <span class="tooltiptext">About</span>
     </li>
   </ul>
 </nav>
 
 <content>
-Hello, World!
+  <router-view></router-view>
 </content>
 
-<script type="text/javascript" src="js/main.js">
-</script>
-
+</div>  <!-- app container -->
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
