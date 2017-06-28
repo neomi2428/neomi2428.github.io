@@ -6,10 +6,20 @@
     </header>
     <nav>
       <ul>
+        <li class="tooltip">
+          <router-link to="/">Calendar</router-link>
+          <span class="tooltiptext">Calendar</span>
+        </li>
+        <li class="tooltip">
+          <router-link to="/">About</router-link>
+          <span class="tooltiptext">About</span>
+        </li>
       </ul>
     </nav>
     <!-- <img src="./assets/logo.png"> -->
-    <router-view></router-view>
+    <content>
+      <router-view></router-view>
+    </content>
   </div>
 
 </template>
