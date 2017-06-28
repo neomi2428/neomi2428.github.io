@@ -6,11 +6,11 @@
     </header>
     <nav>
       <ul>
-        <li class="main-menu tooltip">
+        <li class="tooltip">
           <router-link to="/">Calendar</router-link>
           <span class="tooltiptext">Calendar</span>
         </li>
-        <li class="main-menu tooltip">
+        <li class="tooltip">
           <router-link to="/">About</router-link>
           <span class="tooltiptext">About</span>
         </li>
@@ -55,7 +55,7 @@ nav
     list-style-type: none
     padding: 0
 
-    .main-menu
+    li
       display: inline
       padding: 10px
 
