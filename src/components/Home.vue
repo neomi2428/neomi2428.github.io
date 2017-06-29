@@ -1,6 +1,7 @@
 <template>
   <div id="home-page">
     <div id="scheduleListWrapper">
+      <!-- TODO: Make a SmallButton component, Use @import for a button style -->
       <button @click="createSchedule" class="red-botton">CREATE</button>
     </div>
     <message>Hello There</message>
@@ -33,6 +34,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
+#scheduleListWrapper
+  border: 1px solid #cccccc
+  margin: 10px 0
+
 .red-botton
   background: #d14836
   border: none
