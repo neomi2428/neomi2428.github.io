@@ -7,11 +7,11 @@
     <nav>
       <ul>
         <li class="tooltip">
-          <router-link to="/">Calendar</router-link>
-          <span class="tooltiptext">Calendar</span>
+          <router-link to="/">Home</router-link>
+          <span class="tooltiptext">Home</span>
         </li>
         <li class="tooltip">
-          <router-link to="/">About</router-link>
+          <router-link to="/about">About</router-link>
           <span class="tooltiptext">About</span>
         </li>
       </ul>

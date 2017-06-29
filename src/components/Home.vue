@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div id="home-page">
     <message>Hello There</message>
     <message>Hello There Again</message>
   </div>
@@ -10,7 +10,7 @@
 import Message from './Message.vue'
 
 export default {
-  name: 'hello',
+  name: 'home',
   components: { Message },
   data () {
     return {
