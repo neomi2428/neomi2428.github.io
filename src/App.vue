@@ -6,6 +6,7 @@
     </header>
     <nav>
       <ul>
+        <!-- TODO: Make a tooltip component -->
         <li class="tooltip">
           <router-link to="/">Home</router-link>
           <span class="tooltiptext">Home</span>
