@@ -34,8 +34,11 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="sass">
+
+@import '../assets/style/main.sass'
+
 #scheduleListWrapper
-  border: 1px solid #cccccc
+  border: 1px solid $primary-color
   margin: 10px 0
 
 .red-botton

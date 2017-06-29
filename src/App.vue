@@ -35,9 +35,7 @@ export default {
 
 <style lang="sass">
 
-// TODO need to move this to another file and import the file
-$font-stack: "Open Sans", Helvetica, sans-serif
-$primary-color: #404040
+@import './assets/style/main.sass'
 
 #app
   font: 100% $font-stack
