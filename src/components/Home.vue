@@ -3,7 +3,8 @@
     <div id="scheduleListWrapper">
       <!-- TODO: Make a SmallButton component, Use @import for a button style -->
       <button @click="createSchedule" class="red-botton">CREATE</button>
-      <form id="scheduleForm" method="post">
+      <!-- TODO: config url and stage information -->
+      <form id="scheduleForm" method="post" action="https://hg7cg5r9b6.execute-api.us-west-2.amazonaws.com/dev/schedules">
         <input type="text" placeholder="Address">
         <input type="submit" value="Submit">
       </form>
