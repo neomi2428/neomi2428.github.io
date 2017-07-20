@@ -3,6 +3,10 @@
     <div id="scheduleListWrapper">
       <!-- TODO: Make a SmallButton component, Use @import for a button style -->
       <button @click="createSchedule" class="red-botton">CREATE</button>
+      <form id="scheduleForm" method="post">
+        <input type="text" placeholder="Address">
+        <input type="submit" value="Submit">
+      </form>
     </div>
     <message>Hello There</message>
     <message>Hello There Again</message>
@@ -25,6 +29,7 @@ export default {
   },
   methods: {
     createSchedule () {
+      document.getElementById('scheduleForm').style.display = 'block'
       console.log('Do you want to create a schedule?')
     }
   }
@@ -50,4 +55,8 @@ export default {
   font-size: 16px
   margin: 4px 2px
   padding: 10px 20px
+
+#scheduleForm
+  display: none
+
 </style>
